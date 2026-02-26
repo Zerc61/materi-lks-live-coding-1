@@ -174,7 +174,7 @@
 </div>
 </template>
 
-<style>
+<style scoped>
 .header-content {
     display: flex;
     justify-content: space-between;
