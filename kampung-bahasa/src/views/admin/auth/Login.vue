@@ -1,93 +1,104 @@
 <template>
-    <div class="login-container">
-        <div class="login-card">
-            <h2>Admin Login</h2>
+<div class="menu-login">
+    <div class="login-content">
+        <h2>Admin Login</h2>
 
-            <form action="#" class="login-form">
-                <div class="form-group">
-                    <label for="username">username</label>
-                    <input type="text" name="username" id="username" placeholder="username" required>
-                </div>
+        <form action="#" class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="username" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" placeholder="password" required>
-                </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                 <input type="password" name="password" id="password" placeholder="password" required>
+            </div>
 
-                <button type="submit" class="btn-login">Masuk</button>
-            </form>
-        </div>
+            <button type="submit">Masuk</button>
+        </form>
     </div>
+</div>
 </template>
 
 <style scoped>
-.login-container {
+.menu-login {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, rgb(175, 175, 255), rgb(0, 0, 255));
-}
-
-.login-card {
-    background-color: white;
-    width: 100%;
-    max-width: 350px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, blue, rgb(116, 116, 253));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.214);
 }
 
-.login-card h2 {
+.login-content {
+    width: 100%;
+    max-width: 370px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.116);
+    padding: 40px 30px;
+    border-radius: 12px;
+}
+
+.login-content h2 {
+    margin-bottom: 30px;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 800;
-    color: transparent;
-    -webkit-text-stroke: 1px rgb(0, 4, 255);
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 8px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .form-group label {
-    color: rgb(128, 126, 243);
-    /* font-size: 16px; */
+    color: #4a5568;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .form-group input {
-    padding: 13px;
-    border-radius: 12px;
-    border: 1px solid rgb(166, 166, 246);
-    transition: 0.3s;
+    padding: 14px 16px;
+    border: 1.5px solid #bdbdbd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    background: white;
 }
 
 .form-group input:focus {
-    border-color: rgb(0, 26, 255);
+    border-color: rgba(0, 0, 255, 0.278);
+    background: white;
     outline: none;
+    box-shadow: 0 0 0 3px rgb(188, 188, 255);
 }
 
-.btn-login {
-    padding: 13px;
-    border: none;
-    border-radius: 7px;
-    background-color: rgb(99, 99, 255);
+button {
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 16px;
     color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    border: none;
+    background: blue;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.btn-login:hover {
-    background-color: rgb(30, 30, 204);
+button:hover {
+    background: rgb(22, 22, 150);
+}
+
+button:active {
+    transform: translateY(2px);
 }
 
 
